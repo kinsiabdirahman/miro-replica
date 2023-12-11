@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap");
+
+/* Variables */
+:root {
+  --font-family: "Hedvig Letters Serif", serif;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: #fff;
+  --line-height: 1.7rem;
+  --transition: 0.3s;
+}
+/* Variables end */
+
+/* css for the nav bar */
+* {
+  margin: 0;
+  /* margin-top: 20;
+  margin-bottom: 20;
+  margin-left: 10;
+  margin-right: 10; */
+  margin-left: 10px;
+  /* margin-right: 10px; */
+  padding: 0;
+  box-sizing: border-box;
+  margin-right: 10px;
+}
+
+.black-text {
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  background-color: var(--bg-color);
+  /* box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.1); */
+  border: 3px solid rgb(106, 105, 105);
+  padding-left: 10px;
+}
+/* nav h1 {
+  color: blue;
+} */
+
+nav a {
+  color: rgb(106, 105, 105);
+  transition: var(--transition);
+}
+
+nav ul {
+  display: flex;
+}
+
+nav h1 .pink-text {
+  color: #ff1493;
+  padding: 0;
+}
+
+nav h1 .black-text {
+  color: black;
+  padding: 0;
+}
+
+h6 {
+  color: gray;
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+
+.myself-left {
+  flex-direction: column;
+  align-content: center;
+}
+
+.myself-container {
+  display: flex;
+  padding-left: 20px;
+  padding-top: 250px;
+}
+
+.myself-left {
+  flex: 1;
+}
+
+.about-john h1 .pink-texttwo {
+  color: #ff1493;
+  font-size: 50px;
+}
+
+.about-john h1 .black-texttwo {
+  color: black;
+  font-size: 50px;
+}
+
+.about-john h1 .black-text,
+p {
+  color: black;
+  margin-left: 20px;
+}
+
+.icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.icons li i {
+  border: 2px solid black;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.icons li {
+  display: inline-block;
+}
+
+.myself-right {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.myself-right img {
+  max-width: 100%;
+  /* height: 500px; */
+}
+
+.about-btns {
+  display: flex;
+  margin: 2rem 0;
+}
+.btn {
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  padding: 0.6rem 0;
+  width: 130px;
+  font-weight: 600;
+  background: transparent;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  color: #fff;
+}
+#btn1 {
+  background: #ff1493;
+  color: #fff;
+  /* border-color: #ff1493; */
+}
+
+#btn2 {
+  background: #ff1493;
+  color: #fff;
+  border-color: #ff1493;
+}
